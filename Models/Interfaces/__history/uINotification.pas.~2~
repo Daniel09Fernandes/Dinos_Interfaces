@@ -1,0 +1,13 @@
+unit uINotification;
+
+interface
+
+Type
+  INotificationMsg = interface
+
+
+  end;
+
+implementation
+
+end.

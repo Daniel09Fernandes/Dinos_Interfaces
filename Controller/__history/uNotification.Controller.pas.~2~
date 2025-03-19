@@ -1,0 +1,27 @@
+unit uNotification.Controller;
+
+interface
+
+uses
+  uINotification, uSms.Notification.Model, uWhatsApp.Notification.Model;
+
+Type
+  TTypeNotify = (tnSMS, tnWhatsapp);
+
+  TNotification = class
+    class function New(aTypeNotify: TTypeNotify): INotification;
+  end;
+
+implementation
+
+{ TNotification }
+
+class function TNotification.New(aTypeNotify: TTypeNotify): INotification;
+begin
+  case aTypeNotify of
+    tnSMS: Result := TSMSNotification.New;
+    tnWhatsapp: ;
+  end;
+end;
+
+end.
