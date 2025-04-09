@@ -127,6 +127,10 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Controller\uNotification.Controller.pas"/>
+        <DCCReference Include="Models\uSms.Notification.Model.pas"/>
+        <DCCReference Include="Models\uWhatsApp.Notification.Model.pas"/>
+        <DCCReference Include="Models\Interfaces\uINotification.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
